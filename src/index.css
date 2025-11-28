@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  --spacing: 0.25rem;
+}
+
+@layer utilities {
+
+  /* Hide scrollbar for Chrome, Safari, and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge, and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+  }
+
+  /* Apply scrollbar-width only when supported (e.g. Firefox) */
+  @supports (scrollbar-width: none) {
+    .no-scrollbar {
+      scrollbar-width: none !important;
+    }
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --Red: hsl(14, 86%, 42%);
+  --Red-100: hsla(14, 87%, 33%, 0.975);
+  --Green: hsl(159, 69%, 38%);
+  --Rose-50: hsl(20, 50%, 98%);
+  --Rose-100: hsl(13, 31%, 94%);
+  --Rose-300: hsl(14, 25%, 72%);
+  --Rose-400: hsl(7, 20%, 60%);
+  --Rose-500: hsl(12, 20%, 44%);
+  --Rose-900: hsl(14, 65%, 9%);
+}
+
+@font-face {
+  font-family: 'RedHatText';
+  src: url('../src/assets/fonts/RedHatText-VariableFont_wght.ttf');
+  font-display: swap;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'RedHatText', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--Rose-500) !important;
+}
+
+button:focus-visible {
+  border: 2px solid var(--Rose-500) !important;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+button::selection,
+span::selection,
+p::selection {
+  color: var(--Rose-100);
+  background-color: var(--Green);
+}
+
+img::selection {
+  background: none;
+}
