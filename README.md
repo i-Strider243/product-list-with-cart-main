@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [FrontendMentors](https://www.frontendmentor.io/solutions/desserts-product-list-with-cart-main-a8iK8Hanff)
+- Live Site URL: [Desserts Product Cart](https://desserts-product-cart.netlify.app/)
 
 ## My process
 
