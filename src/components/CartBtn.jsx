@@ -79,6 +79,7 @@ const CartBtn = ({parentId}) => {
           className="counter-btn rounded-full p-1 flex justify-center items-center border border-white text-white hover:text-(--Red) w-4 hover:bg-white group"
           onClick={() => decrease(parentId)}
         >
+          <span className="sr-only">Decrease Button</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="10"
@@ -102,6 +103,7 @@ const CartBtn = ({parentId}) => {
           className="counter-btn rounded-full p-1 flex border border-white text-white hover:text-(--Red) w-4 aspect-square hover:bg-white group"
           onClick={() => increase(parentId)}
         >
+          <span className="sr-only">Increase Button</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="10"

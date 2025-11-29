@@ -31,7 +31,7 @@ const Cart = () => {
         if (notifier.current) {
           notifier.current.classList.remove("animate-ping");
         }
-      },2000);
+      },8000);
       return () => clearTimeout(timer)
     }
   },[cart.length])
@@ -39,7 +39,7 @@ const Cart = () => {
   // Show empty cart message if no items in cart
   if (cart.length === 0) {
     return (
-      <aside className="bg-white p-4 space-y-4 min-w-[320px] max-w-[385px] h-fit rounded-2xl sm:sticky sm:top-6">
+      <aside className="bg-white p-6 space-y-4 min-w-[350px] max-w-[400px] h-fit rounded-2xl sm:sticky sm:top-6">
         <h2 className="text-(--Red) text-2xl font-bold">
           Your Cart ({cart.length})
         </h2>
@@ -60,7 +60,7 @@ const Cart = () => {
   return (
     <>
       {isModalOpen && <Modal />}
-      <aside className="bg-white p-6 space-y-8 text-xs min-w-[350px] max-w-[400px] h-fit rounded-2xl">
+      <aside className="bg-white p-6 space-y-8 text-xs min-w-[350px] max-w-[400px] h-fit rounded-2xl sm:sticky sm:top-6">
         <div className="flex justify-between gap-1 items-center">
           <h2 className="text-(--Red) text-2xl font-bold text-nowrap relative">
             Your Cart ({numberOfItems}){/* Notifier for new cart items added */}
@@ -121,11 +121,7 @@ const Cart = () => {
             This is a <span className="font-bold">carbon-neutral</span> delivery
           </p>
         </div>
-        <Button
-          text={"Confirm Order"}
-          btnClass={"w-full"}
-          onClick={order}
-        />
+        <Button text={"Confirm Order"} btnClass={"w-full"} onClick={order} />
       </aside>
     </>
   );  

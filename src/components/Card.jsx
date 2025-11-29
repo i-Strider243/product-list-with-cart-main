@@ -60,7 +60,7 @@ const Card = ({id,image: {mobile,tablet,desktop},name,category,price}) => {
           {category}
         </span>
         <span className="text-(--Rose-900) text-sm font-semibold">{name}</span>
-        <span className="text-(--Red) text-sm font-semibold">{price.toFixed(2)}</span>
+        <span className="text-(--Red) text-sm font-semibold">${price.toFixed(2)}</span>
       </div>
     </div>
   );

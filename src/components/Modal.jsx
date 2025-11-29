@@ -21,9 +21,13 @@ const Modal = () => {
       <div className="w-8">
         <img src="/images/icon-order-confirmed.svg" alt="" />
       </div>
-      <h3 className="text-(--Rose-900) text-2xl -mb-2.5 font-black">Order Confirmed</h3>
-      <span className="text-(--Rose-500) text-xs">We hope you enjoy your food</span>
-      <div className="bg-(--Rose-100) rounded-lg overflow-hidden px-6 py-2 my-2.5">
+      <h3 className="text-(--Rose-900) text-2xl -mb-2.5 font-black">
+        Order Confirmed
+      </h3>
+      <span className="text-(--Rose-500) text-xs">
+        We hope you enjoy your food
+      </span>
+      <div className="bg-(--Rose-100) rounded-lg overflow-hidden px-6 py-2 my-2.5 overflow-y-scroll no-scrollbar max-h-100">
         {cart.map((item) => {
           const {
             id,
